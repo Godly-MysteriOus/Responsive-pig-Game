@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(
+        45deg,
+        hsl(240deg 100% 20%) 0%,
+        hsl(289deg 100% 21%) 11%,
+        hsl(315deg 100% 27%) 22%,
+        hsl(329deg 100% 36%) 33%,
+        hsl(337deg 100% 43%) 44%,
+        hsl(357deg 91% 59%) 56%,
+        hsl(17deg 100% 59%) 67%,
+        hsl(34deg 100% 53%) 78%,
+        hsl(45deg 100% 50%) 89%,
+        hsl(55deg 100% 50%) 100%
+      );
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container,.overcontainer{
+    width: 70vw;
+    height: 65vh;
+    /* border: 1px solid rgb(249, 248, 248); */
+    display: flex;
+}
+.overcontainer{
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    justify-content: space-around;
+}
+.player0,.player1{
+    width: 50%;
+    height: 100%; 
+    display: grid;
+    align-content: space-around;
+}
+.active-player{
+    background-color: rgba(255, 255, 255, 0.419);
+}
+.deactive-player{
+    background-color: rgba(255, 255, 255, 0.251);
+}
+.btn{
+    font-size: 3vh;
+}
+.btn:hover{
+    background-color: rgba(245, 245, 220, 0.54);
+    border: 2px solid rgba(245, 245, 220, 0.54);
+}
+.btn:active{
+    background-color: antiquewhite;
+}
+.buttonholder{
+    display: flex;
+    justify-content: center;
+    padding: 1vh 1.5vh;
+}
+.Holdbtn{
+    margin-top: 2vh;
+}
+.playerInfo, .globalScore{
+    text-align: center;
+}
+.globalScore{
+    margin-top: 3%;
+    font-size: 7vh;
+}
+.current-information-display{
+    display:flex;
+    justify-content: center;
+}
+.currentScore{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 4vh;
+}
+/* .currentScore{
+    z-index: 3;
+} */
+.wrapper2{
+    padding: 0.5vh 2vw;
+    background-image: linear-gradient(
+        45deg,
+        hsl(315deg 100% 27%) 0%,
+        hsl(329deg 100% 36%) 50%,
+        hsl(337deg 100% 43%) 100%
+      );
+}
+.wrapper4{
+    display: flex;
+    justify-content: center;
+}
+.diceimageHolder{
+    width: 3em;
+    height: 3em;
+}
+img{
+    width: 100%;
+}
+.hidden{
+    display: none;
+}
+.winner{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.804);
+}
+/* .message{
+    font-size: 4vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    width: 100vw;
+    text-align: center;
+    margin-top: 3%;
+    position: absolute;
+} */
+.header{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 5%;
+    font-size: 4vh;
+}
+.ruleholder{
+    font-size: 3.5vh;
+    padding: 0.5vh 2vh;
+    border: 1px solid black;
+    background-color: rgba(240, 248, 255, 0.732);
+}

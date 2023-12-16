@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="player0 active-player">
+                <div class="global-information-display p0">
+                    <h1 class="playerInfo">Player  1</h1>
+                    <p class="globalScore globalScore--player0">0</p>
+                </div>
+                <div class="current-information-display">
+                    <div class="wrapper2 deactive-player">
+                        <h3>Current</h3>
+                        <p class="currentScore currentScore-player0">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="player1 deactive-player">
+                <div class="global-information-display p1">
+                    <h1 class="playerInfo">Player  2</h1>
+                    <p class="globalScore globalScore--player1">0</p>
+                </div>
+                <div class="current-information-display">
+                    <div class="wrapper2 active-player">
+                        <h3>Current</h3>
+                        <p class="currentScore currentScore-player1">0</p>
+                    </div>
+                </div>
+            </div>
+        </div> <!--Wrapper 1st index things-->
+        <div class="overcontainer">
+            <div class="wrapper3">
+                <div class="buttonholder">    <button class="btn NewGamebtn">New Game</button>     </div>
+            </div>
+            <div class="wrapper4">
+                <div class="diceimageHolder"><img src="images/dice-1.jpg" alt="playing dice" class="dice hidden"/></div>
+            </div>
+            <div class="wrapper5">
+                <div class="buttonholder">   <button class="btn RollDicebtn">Roll dice</button>     </div>
+                <div class="buttonholder">   <button class="btn Holdbtn">Hold </button>     </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
